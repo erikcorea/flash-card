@@ -49,3 +49,10 @@ studyButton.addEventListener('click', (event) => {
 	sad();
 
 });
+
+ class Card {
+		constructor(front, back) {
+			this.front = front;
+			this.back = back;
+		}
+ }
