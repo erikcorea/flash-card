@@ -1,9 +1,10 @@
 const text = document.querySelector('textarea');
-const button = document.getElementById('button');
+const button = document.getElementById('save-button');
 const flipButton = document.getElementById('flip');
 const flipText = document.querySelector('h4');
 const studyButton = document.getElementById('study');
 const body = document.querySelector('body');
+// const hey = 'hey';
 let frontCard = [];
 let backCard = [];
 let please = {
@@ -50,9 +51,15 @@ studyButton.addEventListener('click', (event) => {
 
 });
 
- class Card {
-		constructor(front, back) {
-			this.front = front;
-			this.back = back;
-		}
- }
+//  class Card {
+// 		constructor(front, back) {
+// 			this.front = front;
+// 			this.back = back;
+// 		}
+
+// 		hey(){
+// 			return console.log(hey);
+// 		}
+//  }
+
+//  console.loc(Card.hey());
