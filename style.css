@@ -1,0 +1,9 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+textarea.contact-form-text{
+	resize: none;
+	height: 120px;
+}
