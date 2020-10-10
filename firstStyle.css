@@ -1,44 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background-color: #F2E8C9;
+	background-color: #f2e8c9;
 }
 
 h1 {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 10vh;
-    color: #F23D4C;
-    text-shadow: 2px 2px #F2C879;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 10vh;
+	color: #f23d4c;
+	text-shadow: 2px 2px #f2c879;
 }
 
 button {
-    width: 35vh;
-    height: 4vh;
-    border: none;
-    border-radius: 23px;
-    background-color: #F2C879;
-    color: #403023;
-    font-family: 'Tajawal', sans-serif;
-    text-align: center;
-    font-size: 18px;
+	width: 35vh;
+	height: 4vh;
+	border: none;
+	border-radius: 23px;
+	background-color: #f2c879;
+	color: #403023;
+	font-family: 'Tajawal', sans-serif;
+	text-align: center;
+	font-size: 18px;
 }
 
 button:focus {
-    outline: 0;
+	outline: 0;
 }
 
 #create-button {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
 }
