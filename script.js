@@ -1,12 +1,13 @@
-class Cards {
-	constructor(front, back, setTitle) {
-		this.front = front;
-		this.back = back; 
-		this.setTitle = setTitle;
-	}
+let submitText = document.getElementById('set-name');
+let submitButton = document.getElementById('submit-button');
 
-	
-}
+submitButton.addEventListener('click', (event) => {
+	event.preventDefault();
+	submitText.value = {};
+	submitText.front = "PLEAE WORK"
+	console.log(submitText);
+})
+
 
 
 
