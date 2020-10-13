@@ -4,23 +4,34 @@
 }
 
 body {
-	background-color: #f2e8c9;
+	/* background-color: #f2e8c9; */
+	background-image: url('background-image-project.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 h1 {
 	font-family: 'Fjalla One', sans-serif;
-	font-size: 10vh;
-	color: #f23d4c;
-	text-shadow: 2px 2px #f2c879;
+	font-size: 20vh;
+	color: #FBD864;
+	text-shadow: 6px 6px #5B0E00;
+}
+
+p {
+	padding-bottom: 15px;
+	font-family: 'Tajawal', sans-serif;
+	color: #FBD864;
+	text-shadow: 2px 2px #732b3c;
 }
 
 button {
-	width: 35vh;
-	height: 4vh;
+	width: 55vh;
+	height: 5vh;
 	border: none;
-	border-radius: 23px;
-	background-color: #f2c879;
-	color: #403023;
+	border-radius: 5vh;
+	background-color: #FBD864;
+	color: #732b3c;
 	font-family: 'Tajawal', sans-serif;
 	text-align: center;
 	font-size: 18px;

@@ -7,14 +7,23 @@ const wrongButton = document.getElementById('wrong-button');
 const correctCounterText = document.getElementById('correct-number');
 const wrongCounterText = document.getElementById('wrong-number');
 
+const english = ['Hello','Goodbye','Thank You','Please','Excuse Me','Im Sorry','Yes','No','food',
+'Car','Train','Bus','Nice to meet you','My name is ...','I dont understand','That was delicious',
+'You\'re welcome','What is your name?','How far is...?','Can you write that down?'];
+
+const spanish = ['Hola','Adiós','Gracias','Por favor','Perdóneme','Lo siento','Si','No','Comida',
+'Carro','El tren','Autobús','Gusto en conocerlo','Me llamo','No entiendo','Eso estuvo delicioso',
+'De nada','Cuál es su nombre','Que tan lejos esta','Puedes escribir eso'];
+
+
 let frontCounter = 0;
 let backCounter = 0;
 let correctCounterNumber = 0;
 let wrongCounterNumber = 0;
 
 const info = {
-	front: ['Hi', 'How are you?', 'Food', 'Table'],
-	back: ['Hola', 'Como estas?', 'Comida', 'Mesa'],
+	front: english,
+	back: spanish,
 };
 
 textBox.value = info.front[frontCounter];
@@ -57,6 +66,126 @@ wrongButton.addEventListener('click', (event) => {
 	wrongCounterNumber++;
 	wrongCounterText.innerText = `${wrongCounterNumber}`;
 });
+
+
+// const sideText = document.getElementById('flip-text');
+// const flipButton = document.getElementById('flip');
+// const textBox = document.getElementById('front-card');
+// const nextButton = document.getElementById('next-button');
+// const correctButton = document.getElementById('correct-button');
+// const wrongButton = document.getElementById('wrong-button');
+// const correctCounterText = document.getElementById('correct-number');
+// const wrongCounterText = document.getElementById('wrong-number');
+// let english = [
+// 	'Hello',
+// 	'Goodbye',
+// 	'Thank You',
+// 	'Please',
+// 	'Excuse Me',
+// 	'Im Sorry',
+// 	'Yes',
+// 	'No',
+// 	'food',
+// ];
+
+// let frontCounter = 0;
+// let backCounter = 0;
+// let correctCounterNumber = 0;
+// let wrongCounterNumber = 0;
+
+// const info = {
+// 	front: ['Hello', ''],
+// 	back: ['Hola', 'Como estas?', 'Comida', 'Mesa', 'korean'],
+// };
+
+// textBox.value = info.front[frontCounter];
+
+// flipButton.addEventListener('click', (event) => {
+// 	event.preventDefault();
+// 	if (sideText.innerText == 'front') {
+// 		sideText.innerText = 'back';
+// 		textBox.value = info.back[backCounter];
+// 	} else {
+// 		sideText.innerText = 'front';
+// 		textBox.value = info.front[frontCounter];
+// 	}
+// });
+
+// nextButton.addEventListener('click', (event) => {
+// 	event.preventDefault();
+// 	if (frontCounter < info.front.length - 1) {
+// 		console.log('??');
+// 		frontCounter++;
+// 		backCounter++;
+// 		sideText.innerText = 'front';
+// 		textBox.value = info.front[frontCounter];
+// 	} else {
+// 		frontCounter = 0;
+// 		backCounter = 0;
+// 		sideText.innerText = 'front';
+// 		textBox.value = info.front[frontCounter];
+// 	}
+// });
+
+// correctButton.addEventListener('click', (event) => {
+// 	event.preventDefault();
+// 	correctCounterNumber++;
+// 	correctCounterText.innerText = `${correctCounterNumber}`;
+// });
+
+// wrongButton.addEventListener('click', (event) => {
+// 	event.preventDefault();
+// 	wrongCounterNumber++;
+// 	wrongCounterText.innerText = `${wrongCounterNumber}`;
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const form = document.querySelector('form');
 // const input = document.querySelector('input[type=text]');
