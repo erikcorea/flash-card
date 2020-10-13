@@ -9,20 +9,22 @@
 <body>
     <div id="container">
         <h1>Flash Cards</h1>
-        <form>
-            <label for="title">Title</label>
-            <input type="text" id="set-name" name="set-name">
-            <input type="submit" id="submit-button" value="Submit"/>
-        </form>
+        <div id="wr-counter">
+            <h3>Correct: </h3>
+            <p id="correct-number">0</p>
+            <h3>Wrong:</h3>
+            <p id="wrong-number">0</p>
+        </div>
         <h4 id="flip-text">front</h4>
-        <button id="next-button" type="button">Next</button>
-        <button id="flip" type="button">Flip</button>
-        <button id="study" type="button">Study My Cards</button>
         <textarea class="contact-form-text" id="front-card" placeholder="Your Message"></textarea>
+        <div id="button-group" class="buttons">
+            <button id="flip" type='button'>Flip</button>
+            <button id="next-button" type="button">Next</button>
+            <button id="correct-button" type="button">correct</button>
+            <button id="wrong-button" type="button">wrong</button>
+        </div>
     </div>
-    <!-- <div id="back-card">
-        <textarea class="contact-form-text" placeholder="Your Message"></textarea>
-    </div> -->
+
     <script src="script.js"></script>
 </body>
 </html>

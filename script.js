@@ -2,12 +2,19 @@ const sideText = document.getElementById('flip-text');
 const flipButton = document.getElementById('flip');
 const textBox = document.getElementById('front-card');
 const nextButton = document.getElementById('next-button');
+const correctButton = document.getElementById('correct-button');
+const wrongButton = document.getElementById('wrong-button');
+const correctCounterText = document.getElementById('correct-number');
+const wrongCounterText = document.getElementById('wrong-number');
+
 let frontCounter = 0;
 let backCounter = 0;
+let correctCounterNumber = 0;
+let wrongCounterNumber = 0;
 
 const info = {
 	front: ['Hi', 'How are you?', 'Food', 'Table'],
-	back: ['Holla', 'Como estas?', 'Comida', 'Messa'],
+	back: ['Hola', 'Como estas?', 'Comida', 'Mesa'],
 };
 
 textBox.value = info.front[frontCounter];
@@ -39,78 +46,46 @@ nextButton.addEventListener('click', (event) => {
 	}
 });
 
-// let submitText = document.getElementById('set-name');
-// let submitButton = document.getElementById('submit-button');
+correctButton.addEventListener('click', (event) => {
+	event.preventDefault();
+	correctCounterNumber++;
+	correctCounterText.innerText = `${correctCounterNumber}`;
+});
 
-// submitButton.addEventListener('click', (event) => {
+wrongButton.addEventListener('click', (event) => {
+	event.preventDefault();
+	wrongCounterNumber++;
+	wrongCounterText.innerText = `${wrongCounterNumber}`;
+});
+
+// const form = document.querySelector('form');
+// const input = document.querySelector('input[type=text]');
+// const apiKey = '7f904d33847f4dda96f4d436c4a12e65';
+
+// form.addEventListener('submit', (event) => {
 // 	event.preventDefault();
-// 	submitText.value = {};
-// 	submitText.front = "PLEAE WORK"
-// 	console.log(submitText);
+
+// 	let url = ``
 // })
 
-// // const text = document.querySelector('textarea');
-// // const button = document.getElementById('save-button');
-// // const flipButton = document.getElementById('flip');
-// // const flipText = document.querySelector('h4');
-// // const studyButton = document.getElementById('study');
-// // const body = document.querySelector('body');
-// // // const hey = 'hey';
-// // let frontCard = [];
-// // let backCard = [];
-// // let please = {
-// // 	front: frontCard,
-// // 	back: backCard,
-// // };
 
-// // button.addEventListener('click', (event) => {
-// // 	event.preventDefault();
-// // 	if (text.value != '') {
-// // 		if (flipText.innerText == 'front') {
-// // 			frontCard.push(text.value);
-// // 		} else if (flipText.innerText == 'back') {
-// // 			backCard.push(text.value);
-// // 		}
-// // 	}
-// // });
+// const sideText = document.getElementById('flip-text');
+// const frontTextBox = document.getElementById('front-card');
+// const backTextBox = document.getElementById('back-card');
+// const flipButton = document.getElementById('flip');
+// const nextButton = document.getElementById('next-button');
+// const titleText = document.getElementById('set-name');
+// const form = document.querySelector('form');
 
-// // flipButton.addEventListener('click', (event) => {
-// // 	event.preventDefault();
-// // 	text.value = '';
-// // 	if (flipText.innerText == 'front') {
-// // 		flipText.innerText = 'back';
-// // 	} else {
-// // 		flipText.innerText = 'front';
-// // 	}
-// // });
+// // const newSet = {title: 'Spanish', cards: []}
+// // localStorage.setItem('Spanish', newSet)
 
-// // function sad(){
-// // 	for (let i = 0; i < frontCard.length; i++) {
-// // 		const workPlease = document.createElement('textarea');
-// // 		const maybe = document.createElement('textarea');
-// // 		// workPlease.setAttribute('class', 'square');
-// // 		workPlease.value = please.front[i];
-// // 		maybe.value = please.back[i];
-// // 		body.appendChild(workPlease);
-// // 		body.appendChild(maybe);
-// // 	}
-// // };
-
-// // studyButton.addEventListener('click', (event) => {
-// // 	event.preventDefault();
-// // 	sad();
-
-// // });
-
-// // //  class Card {
-// // // 		constructor(front, back) {
-// // // 			this.front = front;
-// // // 			this.back = back;
-// // // 		}
-
-// // // 		hey(){
-// // // 			return console.log(hey);
-// // // 		}
-// // //  }
-
-// // //  console.loc(Card.hey());
+// form.addEventListener('submit', (event) => {
+// 	event.preventDefault();
+// 	const newTitle = titleText.value;
+// 	const newSet = {title: newTitle, cards: []};
+// 	localStorage.setItem(newTitle, JSON.stringify(newSet));
+// 	// console.log(JSON.parse(localStorage.getItem(newTitle)));
+// 	const set = JSON.parse(localStorage.getItem(newTitle));
+// 	console.log(set.cards);
+// });
