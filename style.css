@@ -147,6 +147,7 @@ h1 {
 	font-family: arial;
 }
 
+
 #modal-footer{
 	text-align: right;
 }
@@ -154,11 +155,11 @@ h1 {
 
 .modal-buttons {
 	padding: 14px 18px;
-	background-color: #677996;
+	background-color: #fbd864;
 	border: none;
 	outline: none;
 	border-radius: 3px;
-	color: white;
+	color: #5b0e00;
 	font-family: 'Arial';
 	cursor: pointer;
 }

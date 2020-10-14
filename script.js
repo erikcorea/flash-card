@@ -85,6 +85,7 @@ correctButton.addEventListener('click', (event) => {
 	info.back.splice(backCounter,1);
 	textBox.innerText = info.back[backCounter];
 	textBox.innerText = info.front[frontCounter];
+	sideText.innerText = 'FRONT';
 
 	if(correctCounterNumber > 19){
 		location.reload();
@@ -104,11 +105,10 @@ resetButton.addEventListener('click', (event) => {
 	location.reload();
 });
 
-
+//Modal that we used in class that prompts the user
+//Information about the game
 const openButton = document.getElementById('openModal');
-
 const modal = document.getElementById('modal');
-
 const closeButton = document.getElementById('close');
 
 const openModal = () => {
