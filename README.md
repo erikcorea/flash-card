@@ -1,7 +1,6 @@
 ## Screenshots of app
-https://github.com/erikcorea/flash-card/blob/main/app1.png
-https://github.com/erikcorea/flash-card/blob/main/app2.png
-
+# ![]app1.png
+# ![]app2.png
 
 
 Project Title: ESTUDIAR
@@ -29,5 +28,5 @@ Creator: Erik Correa
 
 
 ## Wireframes
-https://github.com/erikcorea/flash-card/blob/main/wireframe1.jpg
-https://github.com/erikcorea/flash-card/blob/main/wireframe2.jpg
+# ![]wireframe1.jpg
+# ![]wireframe2.jpg
