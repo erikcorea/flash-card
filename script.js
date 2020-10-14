@@ -6,6 +6,9 @@ const correctButton = document.getElementById('correct-button');
 const wrongButton = document.getElementById('wrong-button');
 const correctCounterText = document.getElementById('correct-number');
 const wrongCounterText = document.getElementById('wrong-number');
+const resetButton = document.getElementById('reset-button');
+const correctNumbCounter = document.getElementById('correct-number');
+const wrongNumbCounter = document.getElementById('wrong-number');
 
 const english = ['Hello','Goodbye','Thank You','Please','Excuse Me','Im Sorry','Yes','No','food',
 'Car','Train','Bus','Nice to meet you','My name is ...','I dont understand','That was delicious',
@@ -26,16 +29,16 @@ const info = {
 	back: spanish,
 };
 
-textBox.value = info.front[frontCounter];
+textBox.innerText = info.front[frontCounter];
 
 flipButton.addEventListener('click', (event) => {
 	event.preventDefault();
-	if (sideText.innerText == 'front') {
-		sideText.innerText = 'back';
-		textBox.value = info.back[backCounter];
+	if (sideText.innerText == 'FRONT') {
+		sideText.innerText = 'BACK';
+		textBox.innerText = info.back[backCounter];
 	} else {
-		sideText.innerText = 'front';
-		textBox.value = info.front[frontCounter];
+		sideText.innerText = 'FRONT';
+		textBox.innerText = info.front[frontCounter];
 	}
 });
 
@@ -45,13 +48,13 @@ nextButton.addEventListener('click', (event) => {
 		console.log('??');
 		frontCounter++;
 		backCounter++;
-		sideText.innerText = 'front';
-		textBox.value = info.front[frontCounter];
+		sideText.innerText = 'FRONT';
+		textBox.innerText = info.front[frontCounter];
 	} else {
 		frontCounter = 0;
 		backCounter = 0;
-		sideText.innerText = 'front';
-		textBox.value = info.front[frontCounter];
+		sideText.innerText = 'FRONT';
+		textBox.innerText = info.front[frontCounter];
 	}
 });
 
@@ -59,6 +62,21 @@ correctButton.addEventListener('click', (event) => {
 	event.preventDefault();
 	correctCounterNumber++;
 	correctCounterText.innerText = `${correctCounterNumber}`;
+	info.front.splice(frontCounter,1);
+	info.back.splice(backCounter,1);
+	textBox.innerText = info.back[backCounter];
+	textBox.innerText = info.front[frontCounter];
+
+	if(correctCounterNumber > 19){
+		location.reload();
+		frontCounter = 0;
+		backCounter = 0;
+		sideText.innerText = 'FRONT';
+		correctNumbCounter.innerText = '0';
+		wrongCounterText.innerText = '0';
+		textBox.innerText = info.front[frontCounter];
+
+	}
 });
 
 wrongButton.addEventListener('click', (event) => {
@@ -66,6 +84,17 @@ wrongButton.addEventListener('click', (event) => {
 	wrongCounterNumber++;
 	wrongCounterText.innerText = `${wrongCounterNumber}`;
 });
+
+
+resetButton.addEventListener('click', (event) => {
+	event.preventDefault();
+	frontCounter = 0;
+	backCounter = 0;
+	sideText.innerText = 'FRONT';
+	correctNumbCounter.innerText = '0';
+	wrongCounterText.innerText = '0';
+	textBox.innerText = info.front[frontCounter];
+})
 
 
 // const sideText = document.getElementById('flip-text');

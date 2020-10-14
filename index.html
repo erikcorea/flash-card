@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Flash Card</title>
 </head>
 <body>
     <div id="container">
-        <h1>Flash Cards</h1>
+        <h1>ESTUDIAR</h1>
         <div id="wr-counter">
-            <h3>Correct: </h3>
+            <h3 class="h3-cw">Correct: </h3>
             <p id="correct-number">0</p>
-            <h3>Wrong:</h3>
+            <h3 class="h3-cw">Wrong:</h3>
             <p id="wrong-number">0</p>
         </div>
-        <h4 id="flip-text">front</h4>
-        <textarea class="contact-form-text" id="front-card" placeholder="Your Message"></textarea>
-        <div id="button-group" class="buttons">
-            <button id="flip" type='button'>Flip</button>
-            <button id="next-button" type="button">Next</button>
-            <button id="correct-button" type="button">correct</button>
-            <button id="wrong-button" type="button">wrong</button>
+        <h4 id="flip-text">FRONT</h4>
+        <div class="contact-form-text" id="front-card">Your Message</div>
+        <div class="button-group">
+            <button class="buttons" id="flip" type='button'>Flip</button>
+            <button class="buttons" id="next-button" type="button">Next</button>
+            <button class="buttons" id="correct-button" type="button">correct</button>
+            <button class="buttons" id="wrong-button" type="button">wrong</button>
+            <button class="buttons" id="reset-button" type="button">Reset</button>
         </div>
     </div>
 
